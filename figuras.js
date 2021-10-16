@@ -67,3 +67,49 @@ const areaCirculo = pi * (radioCirculo ** 2 );
 console.log('El Area del triangulo es: '+ areaCirculo+ 'cm^2 .');
 
 console.groupEnd();
+
+///FUNCIONES
+//Codigo del cuadrado
+
+console.group("Cuadrados");
+
+function perimetroCuadrado(lado) {
+    return lado * 4;
+}
+
+function areaCuadrado(lado) {
+    return lado ** 2;
+}
+
+console.groupEnd();
+
+//Codigo del triangulo
+
+function perimetroTriangulo(lado1, lado2, base) {
+    return lado1 + lado2 + base;
+}
+
+
+function areaTriangulo(base, altura) {
+    return (base * altura)/2;
+}
+
+
+console.groupEnd();
+
+//Codigo del Circulo
+console.group("Circulos");
+
+const pi = Math.PI;
+
+//Perimetro / Circunferencia
+function perimetroCirculo(diametro) {
+    return pi * diametro;
+}
+
+//Area
+function areaCirculo(radio) {
+    return pi * (radio ** 2 );
+}
+
+console.groupEnd();
